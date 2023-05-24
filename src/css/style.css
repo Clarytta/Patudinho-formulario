@@ -155,6 +155,11 @@ footer .github img {
 }
 
 @media (max-width: 550px){
+    body {
+        background-image: none;
+        background-color: #c0c0c0;
+    }
+
     #page {
         justify-content: flex-start;
     }
@@ -165,6 +170,7 @@ footer .github img {
 
     #principal-card {
         flex-direction: column;
+        box-shadow: none;
     }
 
     #card-dog {
@@ -175,6 +181,7 @@ footer .github img {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 20px;
     }
 
     #card-form .title img {
@@ -193,13 +200,22 @@ footer .github img {
         font-size: 1.2em;
         max-width: 340px;
         padding: 15px;
+        margin-bottom: 23px;
     }
 
+    input[type=submit] {
+        margin-top: 23px;
+    }
+    
     label {
         font-size: 1.3em;
     }
 
     footer h2 {
         font-size: .75em;
+    }
+
+    footer {
+        margin-top: 0;
     }
 }
