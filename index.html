@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patudinho - Inscreva-se</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="page">
+        <main>
+            <div id="principal-card">
+                <div id="card-dog">
+                    <img src="./src/images/dog.png" alt="">
+                </div>
+                <div id="card-form">
+                    <div class="title">
+                        <img src="./src/images/logo.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        <p>Inscreva-se para receber novidades sobre adoção!</p>
+                    </div>
+
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" placeholder="Seu Nome" minlength="2" required
+                                autofocus>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="exemplo@mail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tel">Telefone</label>
+                            <input type="tel" name="tel" id="tel" placeholder="(xx)9 xxxx-xxxx" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state">Estado</label>
+                            <select name="state" id="state">
+                                <option value="" selected disabled>Selecionar</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="ES">Espírito Santo</option>
+                            </select>
+                        </div>
+
+                        <div class="button">
+                            <input type="submit" name="send" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <h2>Feito por <span>Clarisse Almeida</span></h2>
+            </div>
+            <div class="github">
+                <a href="https://github.com/Clarytta" target="_blank">
+                    <h2>GitHub</h2>
+                </a>
+                <a href="https://github.com/Clarytta" target="_blank"><img src="./src/images/github.png" alt=""
+                        title="GitHub"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

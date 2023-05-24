@@ -1,0 +1,231 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-image: linear-gradient(to left, #46729b, #2a3e55);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#principal-card {
+    display: flex;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
+}
+
+#card-dog {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(230deg, #4254bd, #141736);
+}
+
+#card-dog img {
+    max-width: 200px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+#card-dog img:hover {
+    transform: scale(1.1);
+}
+
+#card-form {
+    width: 400px;
+    background-color: #d4d4d4;
+    padding: 25px;
+
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#card-form .subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: .8em;
+}
+
+#card-form .title img {
+    max-width: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px 20px 10px 20px;
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select,
+input[type=submit] {
+    width: 320px;
+    padding: 10px;
+    font-size: 1.2em;
+
+    border: none;
+    border-radius: 3px;
+    outline: none;
+
+    transition: background-color .2s ease, color .7s ease;
+}
+
+input:hover,
+input:focus,
+select:hover,
+select:focus,
+input[type=submit]:hover,
+input[type=submit]:focus {
+    background-color: #29303b;
+    color: #fff;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 1.2em;
+    pointer-events: none;
+
+    letter-spacing: .8px;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: .6em;
+}
+
+footer span {
+    color: #161929;
+    cursor: pointer;
+
+    transition: color .3s ease;
+}
+
+footer .github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+footer .github a {
+    color: #000;
+
+    transition: color .3s ease;
+}
+
+footer span:hover,
+footer .github a:hover {
+    color: #fff;
+}
+
+footer .github img {
+    width: 45px;
+
+    transition: transform .3s ease;
+}
+
+footer .github img:hover {
+    transform: scale(1.09);
+}
+
+
+
+@media (max-width: 600px) {
+    body {
+        justify-content: flex-start;
+        background-image: none;
+        background-color: #d4d4d4;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #principal-card {
+        flex-direction: column;
+        box-shadow: none;
+
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;
+    }
+
+    #card-dog {
+        width: auto;
+        padding: 10px;
+
+        border-bottom-left-radius: unset;
+        border-bottom-right-radius: 200px;
+    }
+
+    #card-form {
+        width: auto;
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;
+    }
+
+    #card-form .title img {
+        max-width: 230px;
+    }
+
+    #card-form .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    #card-form .subtitle {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+
+
+    form .form-group {
+        margin-bottom: 30px;
+    }
+
+    .form-group input,
+    .form-group select,
+    input[type=submit] {
+        max-width: 380px;
+        padding: 17px;
+    }
+
+    .form-group label {
+        margin-bottom: 8px;
+    }
+
+    footer {
+        justify-content: space-around;
+        margin-top: 0px;
+    }
+}
